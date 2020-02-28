@@ -1,0 +1,11 @@
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.csprojAssemblyReference.cache
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.AssemblyInfo.cs
+/Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.deps.json
+/Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.runtimeconfig.json
+/Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.runtimeconfig.dev.json
+/Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.dll
+/Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.pdb
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.dll
+/Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.pdb
