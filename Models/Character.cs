@@ -2,21 +2,16 @@
 using System;
 using System.Collections.Generic;
 
-namespace CharacterAbout
+namespace CharacterAbout.Models
 {
   public class Character 
   {
-    public string Name {get;set;}
+    public string Name { get; set; }
+    public string DogName { get; set; }
+    public int CharLife { get; set; }
+    public int DogLife { get; set; }
+    public int MoralLevel { get; set; }
 
-    public string DogName {get;set;}
-    public int CharLife {get;set;}
-    public int DogLife {get;set;}
-    
-    public int MoralLevel {get;set;}
-
-    
-    
-    
     public Character (string name, string dogName)
     { 
       Name = name;
@@ -58,11 +53,10 @@ namespace CharacterAbout
 
     public void DisplayChar()
     {
-
-      Console.Write(Name + ", ");
-      Console.Write ($"Your Moral Level = {MoralLevel} ,");
-      Console.Write($"Your Life Level is = {CharLife} ,");
-      Console.WriteLine($"{DogName}'s Life Level is = {DogLife}");
+      Console.Write($"{Name}, ");
+      Console.Write($"Your moral level = {MoralLevel} ,");
+      Console.Write($"your life level = {CharLife} ,");
+      Console.WriteLine($"{DogName}'s life level = {DogLife}");
     }
 
   }

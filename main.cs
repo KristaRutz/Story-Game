@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using CharacterAbout;
-using Storyline;
+using CharacterAbout.Models;
+using Storyline.Models;
 
 
 namespace DogGame

@@ -9,3 +9,14 @@
 /Users/Guest/Desktop/Dog-RPG/bin/Debug/netcoreapp2.2/dog.pdb
 /Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.dll
 /Users/Guest/Desktop/Dog-RPG/obj/Debug/netcoreapp2.2/dog.pdb
+C:\Users\Krista\Desktop\Story-Game\bin\Debug\netcoreapp2.2\dog.deps.json
+C:\Users\Krista\Desktop\Story-Game\bin\Debug\netcoreapp2.2\dog.runtimeconfig.json
+C:\Users\Krista\Desktop\Story-Game\bin\Debug\netcoreapp2.2\dog.runtimeconfig.dev.json
+C:\Users\Krista\Desktop\Story-Game\bin\Debug\netcoreapp2.2\dog.dll
+C:\Users\Krista\Desktop\Story-Game\bin\Debug\netcoreapp2.2\dog.pdb
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.csprojAssemblyReference.cache
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.csproj.CoreCompileInputs.cache
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.AssemblyInfoInputs.cache
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.AssemblyInfo.cs
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.dll
+C:\Users\Krista\Desktop\Story-Game\obj\Debug\netcoreapp2.2\dog.pdb

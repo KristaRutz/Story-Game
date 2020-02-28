@@ -1,26 +1,26 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using CharacterAbout;
+using CharacterAbout.Models;
 
 
-namespace Storyline
+namespace Storyline.Models
 {
-
   public class Story
   {
-    public static Character newChar = new Character("", "");
+    public static Character newChar;
+    
     public static void StartGame() 
       {
-        Console.WriteLine("Do you want to Start a New Game? Y for Yes, N for no");
+        Console.WriteLine("Do you want to start a new game? 'Y' for yes, 'N' for no");
         string answer = Console.ReadLine().ToLower();
         if (answer == "y")
         {
-          Console.WriteLine("Your Adventure Begins");
+          Console.WriteLine("Your adventure begins...");
         }
         else if (answer == "n")
         {
-          Console.WriteLine("GoodBye");
+          Console.WriteLine("Goodbye");
           System.Environment.Exit(0);
         }
         else
@@ -31,53 +31,42 @@ namespace Storyline
 
     public static void NameChar()
     {
-      Console.WriteLine("What is your name");
+      newChar = new Character("","");
+      Console.WriteLine("What is your name?");
       newChar.Name = Console.ReadLine();
-      Console.WriteLine("Whats your dogs name");
+      Console.WriteLine("What's your dog's name?");
       newChar.DogName = Console.ReadLine();
     }
 
     public static void FirstChapter()
     {
-      int seconds = 2000;
-      int quickseconds = 1000;
+      int instant = 0;
+      int quick = 1;
+      int normal = 2;
       string dogName = newChar.DogName;
       string name = newChar.Name;
-      Console.WriteLine("Its another Monday, and Chocolate Milk just isnt going to cut it tonight. Time to go pick up a few brews");
-      Thread.Sleep(seconds);
-      Console.WriteLine($"Come on {dogName} hop in the car, We're going to the store");
-      Thread.Sleep(seconds);
-      Console.WriteLine($"Wait here buddy, I'm going to be right back, just got grab a few things");
-      Thread.Sleep(seconds);
-      Console.WriteLine("Bark! Bark!");
-      Thread.Sleep(seconds);
-      Console.WriteLine($"I knew you'd understand bud");
-      Thread.Sleep(seconds);
-      Console.WriteLine($"That gunna be all for you {name}" );
-      Thread.Sleep(seconds);
-      Console.WriteLine("Yea thats it Bertha");
-      Thread.Sleep(seconds);
-      Console.WriteLine("What the !!");
-      Thread.Sleep(quickseconds);
-      Console.WriteLine("SCREEEEEEEEAACHHHHH");
-      Thread.Sleep(quickseconds);
-      Console.WriteLine("Thats my flippin Car MAN!!");
-      Thread.Sleep(quickseconds);
-      Console.WriteLine("Bark bark");
-      Thread.Sleep(quickseconds);
-      Console.WriteLine($"That A-hole got {dogName}. Hold on I'm coming buddy!!");
+
+      Line[] lines = {new Line("..................", instant), new Line("[It's another Monday, and ~Chocolate Milk~ just isn't going to cut it tonight. Time to go pick up a few brews...]", normal), new Line($"Come on, {dogName}, hop in the car. We're going to the store.", normal), new Line("..................", instant), new Line("[At the store] Wait here buddy, I'll be right back. Just gotta grab a few things.", normal), new Line($"{dogName.ToUpper()}: Bark! Bark!", normal), new Line("I knew you'd understand, bud.", normal), new Line("..................", instant), new Line($"BERTHA: That gonna be all for you, {name}?", normal ), new Line("Yea, that's it, Bertha. Thanks.", normal), new Line("..................", instant), new Line("[You pay and exit the store.]", normal), new Line("What the #*@%?!!", quick), new Line("*SCREEEEEEEEAACHHHHH*", quick), new Line("That's my flippin' CAR, MAAAN!!", quick), new Line($"{dogName.ToUpper()}: Bark! Bark!", quick), new Line($"That a-hole got {dogName}! Hold on, I'm coming, buddy!!", normal), new Line("..................", instant)}; 
+
+      Chapter chapter = new Chapter(1, lines);
+
+      for (int i = 0; i < chapter.Lines.Length; i++)
+      {
+        Console.WriteLine(chapter.Lines[i].Content);
+        Thread.Sleep(chapter.Lines[i].Speed * 1000);
+      }  
     }
     public static void SecondChapter()
     {
       int seconds = 2000;
       string dogName = newChar.DogName;
-      Console.WriteLine($"I need a way to get to {dogName}");
+      Console.WriteLine($"I need a way to get to {dogName}.");
       Thread.Sleep(seconds);
-      Console.WriteLine("You look around a scan your enviorment. Theres some skaters off in the parking lot and theres a bike tied up next to you");
+      Console.WriteLine("[You look around amd scan your enviorment. There are some skaters off in the parking lot and there's a bike tied up next to you.]");
       Thread.Sleep(seconds);
-      Console.WriteLine("Ask the Skaters for a Board? Or try and steal the bike next to you");
+      Console.WriteLine(">> DO YOU >> Ask the skaters for a board, or try and steal the bike next to you?");
       Thread.Sleep(seconds);
-      Console.WriteLine("Enter a for SkateBoard: Or b For Bike");
+      Console.WriteLine(">> Enter 'A' for skateboard or 'B' For bike");
       Thread.Sleep(seconds);
       string answer =Console.ReadLine().ToLower();
       if  (answer == "a")
