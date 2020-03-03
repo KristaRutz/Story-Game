@@ -13,9 +13,6 @@ namespace DogGame
     public static void Main()
     {
       Story.StartGame();
-      Story.NameChar();
-      Story.FirstChapter();
-      Story.SecondChapter();
       Story.HappyEnd();
     }
   }
